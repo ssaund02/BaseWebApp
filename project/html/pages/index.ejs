@@ -11,6 +11,14 @@
   
     <h1>Somebody made this cool site!</h1>
   </div>
+  
+  <div class="error-message"></div>
+  
+  <div class="city">
+  </div>
+  
+  <div class="temp">
+  </div>
 
   <p>Click on the button for a surprise.</p>
 
@@ -19,15 +27,19 @@
   <div id="image"></div>
   
   <input class="search" type="text" placeholder="Enter city name:">
-  <button type="button" onClick="searchWeather()">Search</button>
-
-  <div class="error-message"></div>
+  <button type="button" onClick="searchWeather()">Search</button><br><br>
+ 
+ <button onClick="handleSignIn()">Login</button>
   
-  <div class="city">
-  </div>
+  <form onSubmit="handleMessageFormSubmit()" action="#">
+	Title:<br>
+	<input id="post-title"><br>
+	Body:<br>
+	<textarea id="post-body"></textarea><br>
+	<button>Submit</button>
+  </form>
   
-  <div class="temp">
-  </div>
+  <div id="post-listing"></div>
   
 </body>
 
